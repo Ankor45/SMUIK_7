@@ -60,6 +60,13 @@ extension ViewController: UIScrollViewDelegate {
                 width: view.bounds.width,
                 height: 270 - offsetY
             )
+            imageView.bounds = CGRect(
+               x: 0,
+               y: 0,
+               width: view.bounds.width - offsetY,
+               height: 270 - offsetY
+           )
+            
             scrollView.scrollIndicatorInsets = UIEdgeInsets(
                 top: 270 - offsetY - view.safeAreaInsets.top,
                 left: 0,
